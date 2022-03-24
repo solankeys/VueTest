@@ -14,5 +14,6 @@ header{
 display: flex;
 align-items: center;
 justify-content: end;
+background: #fff;
 }
 </style>

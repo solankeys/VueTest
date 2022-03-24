@@ -6,6 +6,7 @@
     <Banner />
     <Capture />
     <Satisfaction />
+    <Testpage/>
     <Services />
     <Getstarted />
   </div>
@@ -20,6 +21,7 @@ import Satisfaction from './components/Satisfaction.vue'
 import Services from './components/Services.vue'
 import Getstarted from './components/Getstarted.vue'
 import Topnavbar from './components/Topnavbar.vue'
+import Testpage from './components/Testpage.vue'
 
 export default {
   name: 'App',
@@ -32,6 +34,7 @@ export default {
     Services,
     Getstarted,
     Topnavbar,
+    Testpage
   },
 }
 </script>

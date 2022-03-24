@@ -1,15 +1,15 @@
 <template>
-  <button>TEXT</button>
+  <button>Sign Up</button>
   <!-- <button>{{text}}</button> -->
 </template>
+
+
 <script>
 
 
 export default ({
   name:'Button',
-  props: {
-    text:string
-  }
+  // props: 'texts'
 })
 </script>
 <style scoped>

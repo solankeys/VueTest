@@ -3,38 +3,19 @@
     <img alt="likemetric logo" src="../assets/likemetric.png" />
     <ul id="navbar">
       <li v-for="item in items" :key="item.id">{{ item.list }}</li>
-      <!-- <li>Solutions</li>
-      <li>Pricing</li>
-      <li>Insight</li>
-      <li>About Us</li>
-      <li>Industry</li> -->
-      <!-- <li v-for="item in items" :key="item.message">
-        {{ item.message }}
-      </li> -->
     </ul>
-    <button>Sign Up</button>
-    <!-- <Button  /> -->
+    <!-- <button>Sign Up</button> -->
+    <Button  />
   </header>
 </template>
 <script>
-// import Button from './Button.vue';
+import Button from './Button.vue';
 
  export default{
    name:'Navbar',
-//  components: {
-  //    Button,
-  //  }
-//    data : {
-//      items: [
-//        {list: 'Products'},
-//        {list: 'Solutions'},
-//        {list: 'Pricing'},
-//        {list: 'Insight'},
-//        {list: 'About Us'},
-//        {list: 'Industry'},
-//      ]
-//    }
-//  }
+   components: {
+     Button,
+   },
  data: function () {
     return {
       items: [
@@ -44,24 +25,11 @@
        {list: 'Insight'},
        {list: 'About Us'},
        {list: 'Industry'},
-      ]
+      ],
     }
   }
  }
-// new Vue{
-//   name:'Navbar',
-//   el: '#navbar',
-  // data: {
-  //   items: [
-  //     { message: 'Products' },
-  //     { message: 'Solutions' },
-  //     { message: 'Pricing' },
-  //     { message: 'Insight' },
-  //     { message: 'About Us' },
-  //     { message: 'Industry' },
-  //   ],
-  // },
-// }
+
 </script>
 
 <style scoped>
@@ -69,6 +37,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
+  height: 70px;
 }
 ul {
   display: flex;

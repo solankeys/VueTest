@@ -1,17 +1,26 @@
 <template>
-  <div class="card">
-    <h3>Capture instant feedback</h3>
-    <p>
-      Learn your customers’ emotions at the exact moment and experience point
-    </p>
-  </div>
+  <div class="satisfaction__card">
+      <div v-for="data in steps" :key="data.title" class="card">
+        <h3>{{ data.title }}</h3>
+        <p>{{ data.message }}</p>
+      </div>
+    </div>
 </template>
 <script>
+import { ref } from 'vue'
+import data from './CardData.js'
+
 export default {
   name: 'Card',
+  props: ['steps']
 }
 </script>
 <style scoped>
+.satisfaction__card {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
 .card {
   text-align: center;
   width: 200px;
