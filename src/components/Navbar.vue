@@ -5,7 +5,7 @@
       <li v-for="item in items" :key="item.id">{{ item.list }}</li>
     </ul>
     <!-- <button>Sign Up</button> -->
-    <Button  />
+  <Button :text='title' />
   </header>
 </template>
 <script>
@@ -26,6 +26,7 @@ import Button from './Button.vue';
        {list: 'About Us'},
        {list: 'Industry'},
       ],
+      title:'Signup'
     }
   }
  }
@@ -48,17 +49,5 @@ ul {
 ul li {
   list-style: none;
 }
-button {
-  padding: 12px 6px;
-  background-color: #e01e5a;
-  border: none;
-  outline: none;
-  border-radius: 6px;
-  color: #fff;
-}
-button:hover {
-  background-color: transparent;
-  border: 1px solid #e01e5a;
-  color: #e01e5a;
-}
+
 </style>

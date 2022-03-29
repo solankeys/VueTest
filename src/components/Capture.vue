@@ -12,12 +12,24 @@
         helps you improve customer experience and drive growth, efficiency and
         profit. Happy customers buy more!
       </p>
+      <Button text="Load More" />
     </div>
   </div>
 </template>
 <script>
+
+import Button from './Button.vue'
 export default ({
-  name: 'Capture'
+  name: 'Capture',
+  components: {
+    Button,
+  },
+  data() {
+    return {
+      
+    }
+  },
+
 })
 </script>
 <style scoped>

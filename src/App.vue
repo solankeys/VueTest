@@ -1,9 +1,10 @@
 <template>
   <!-- <HelloWorld /> -->
-  <div class="container">
+  <div class="container" v-cloak>
     <Topnavbar />
     <Navbar />
     <Banner />
+    <Form />
     <Capture />
     <Satisfaction />
     <Testpage/>
@@ -22,6 +23,7 @@ import Services from './components/Services.vue'
 import Getstarted from './components/Getstarted.vue'
 import Topnavbar from './components/Topnavbar.vue'
 import Testpage from './components/Testpage.vue'
+import Form from './components/Form.vue'
 
 export default {
   name: 'App',
@@ -34,7 +36,8 @@ export default {
     Services,
     Getstarted,
     Topnavbar,
-    Testpage
+    Testpage,
+    Form
   },
 }
 </script>
@@ -55,4 +58,6 @@ button {
 outline: none;
 border: none;
 }
+[v-cloak] > * { display:none }
+[v-cloak]::before { content: "loading…" }
 </style>
